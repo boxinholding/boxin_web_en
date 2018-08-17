@@ -1,0 +1,144 @@
+# Site settings
+baseurl = "http://10.0.0.88:1212"
+languageCode = "en-us"
+title = "Toppers"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [this page](/)"
+
+  # Navigation
+  [params.navigation]
+    brand = "TOPPERS"
+    product = "Product"
+    service = "Service"
+    company = "Company"
+    contact = "Contact"
+
+  # Hero section
+  [params.hero]
+    enable = true
+    notext = true
+    title = ""
+    description = ""
+
+  [params.carousel]
+    enable = false
+
+  #Product section
+  [params.product]
+    enable = true
+    title = "product"
+    subtitle = "For more company, please pay attention to Toppers."
+
+  [[params.product.row]]
+
+    [[params.product.row.list]]
+      icon = "iconfont tp-earphones"
+      title = "Headset"
+      description = ""
+      modalID = 1
+
+    [[params.product.row.list]]
+      icon = "iconfont tp-watch"
+      title = "Watch"
+      description = ""
+      modalID = 2
+    
+    [[params.product.row.list]]
+      icon = "iconfont tp-more"
+      title = "more"
+      description = ""
+      modalID = 3
+
+# service section
+  [params.service]
+    enable = true
+    center = true
+    title = "Service"
+    subtitle = "Toppers gives you the best user experience."
+    [[params.service.members]]
+      img = "1.png"
+      name = "Smart Sound Box"
+      social = [
+        ["fa-android", "#"],
+        ["fa-apple", "#"],
+      ]
+
+    [[params.service.members]]
+      img = "2.png"
+      name = "Translation Headphones"
+      social = [
+        ["fa-android", "#"],
+        ["fa-apple", "#"],
+      ]
+
+    [[params.service.members]]
+      img = "3.png"
+      name = "Children Watch"
+      social = [
+        ["fa-android", "#"],
+        ["fa-apple", "#"],
+      ]
+
+ # company section
+  [params.company]
+    enable = true
+    title = "Company"
+    subtitle = "For more company, please pay attention to Toppers."
+  [[params.company.row]]
+
+    [[params.company.row.list]]
+      icon = "iconfont tp-about"
+      title = "About us"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      url = "#"
+
+    [[params.company.row.list]]
+      icon = "iconfont tp-speakers"
+      title = "产品理念"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      url = "#"
+
+    [[params.company.row.list]]
+      icon = "iconfont tp-development"
+      title = "研发中心"
+      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      url = "#"
+
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contact us"
+    subtitle  = "Lorem ipsum dolor sit amet consectetur."
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Published under the Apache License 2.0."
+
+    [[params.footer.social]]
+      icon = "fa-weixin"
+      link = "#"
+      title = "wechat"
+
+    [[params.footer.social]]
+      icon = "fa-weibo"
+      link = "#"
+      title = "sina weibo"
+
