@@ -2,14 +2,14 @@
 <footer style="padding:0 0 10px">
   <div class="container">
     <div class="row">
-      <div class="col-md-8 auto-line-height">
+      <div class="col-md-8 auto-line-height" style="text-align:left">
         <span class="copyright">{{ with .Site.Params.footer.copyright }}{{ . | markdownify }}{{ end }}</span>
       </div>
       <div class="col-md-4">
-        <ul class="list-inline social-buttons">
+        <ul class="list-inline social-buttons" style="text-align:right">
 
           {{ range .Site.Params.footer.social }}
-            <li><a href="{{ .link }}" title="{{ .title }}"><i class="fa {{ .icon }}"></i></a></li>
+            <li style="text-align:center"><a href="{{ .link }}" title="{{ .title }}"><i class="fa {{ .icon }}"></i></a></li>
           {{ end }}
 
         </ul>
