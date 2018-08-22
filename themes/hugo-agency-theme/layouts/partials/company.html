@@ -1,0 +1,34 @@
+{{ "<!-- Company -->" | safeHTML }}
+<section id="company">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">{{ with .Site.Params.company.title }}{{ . }}{{ end }}</h2>
+        <h3 class="section-subheading text-muted">{{ with .Site.Params.company.subtitle }}{{ . | markdownify }}{{ end }}</h3>
+      </div>
+    </div>
+    {{ range .Site.Params.company.row }}
+      <div class="row text-center">
+        {{ range .list }}
+          <div class="col-md-4">
+            {{ if .url }}
+            <a href="{{ .url | absURL }}">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa {{ .icon }} fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+            {{ else }}
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                <i class="fa {{ .icon }} fa-stack-1x fa-inverse"></i>
+              </span>
+              {{ end }}
+            <h4 class="service-heading">{{ if .url }}<a href="{{ .url | absURL }}">{{ .title | markdownify }}</a>{{ else }}{{ .title | markdownify }}{{ end }}</h4>
+            <p class="text-muted">{{ .description | markdownify }}</p>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>

@@ -1,0 +1,26 @@
+{{ "<!-- Portfolio Modals -->" | safeHTML }}
+{{ range .Site.Data.product }}
+  <div class="portfolio-modal modal fade" id="portfolioModal{{ .modalID }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <h2>{{ .title  | markdownify }}</h2>
+              <p class="item-intro text-muted">{{ .subtitle | markdownify }}</p>
+              {{ $url := printf "img/product/%s" .img }}
+              <img class="img-responsive img-centered" src="{{ $url | absURL }}" alt="">
+              <p>{{ .description | markdownify }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{ end }}

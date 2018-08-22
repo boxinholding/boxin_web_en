@@ -1,0 +1,20 @@
+{{ $contact := .Site.Params.contact }}
+{{ "<!-- Contact Section -->" | safeHTML }}
+
+<section id="contact"  class="section-small">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+
+        {{ with $contact.title }}
+        <h2 class="section-heading">{{ . | markdownify }}</h2>
+        {{ end }}
+
+        {{ with $contact.subtitle }}
+        <h3 class="section-subheading text-muted">{{ . | markdownify }}</h3>
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+</section>
