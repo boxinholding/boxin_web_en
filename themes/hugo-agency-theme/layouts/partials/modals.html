@@ -10,13 +10,13 @@
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2">
+          <div class="col-lg-12">
             <div class="modal-body">
               <h2>{{ .title  | markdownify }}</h2>
               <p class="item-intro text-muted">{{ .subtitle | markdownify }}</p>
               {{ $url := printf "img/product/%s" .img }}
               <img class="img-responsive img-centered" src="{{ $url | absURL }}" alt="">
-              <p>{{ .description | markdownify }}</p>
+              <p class="text-left">{{ .description | markdownify }}</p>
             </div>
           </div>
         </div>

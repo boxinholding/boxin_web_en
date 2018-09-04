@@ -6,13 +6,33 @@
     <div class="row">
       <div class="col-lg-12">
 
-        {{ with $contact.title }}
-        <h2 class="section-heading">{{ . | markdownify }}</h2>
+        {{ with $contact.company }}
+        <h3 class="contact-title">{{ . | markdownify }}</h3>
         {{ end }}
+       
+        <div class="contact-content">
+          <div class="contact-description">
+            {{ range $contact.address }}
+              <div class="contact-item">
+                <div class="contact-key">{{ index . 0 | markdownify }}</div>
+                <div class="contact-value">{{ index . 1 | markdownify }}</div>
+              </div>
+            {{ end }}
+            {{with $contact.phone}}
+            <div class="contact-item">{{ . | markdownify}}</div>
+            {{ end }}
+            {{with $contact.email}}
+            <div class="contact-item">{{ . | markdownify}}</div>
+            {{ end }}
+          </div>
 
-        {{ with $contact.subtitle }}
-        <h3 class="section-subheading text-muted">{{ . | markdownify }}</h3>
-        {{ end }}
+          {{ range $contact.call }}
+          <div class="contact-phone">
+              <img src="img/contact/{{ index . 0 | markdownify}}" /><span>{{ index . 1 | markdownify }}</span>
+          </div>
+          {{ end }}
+        </div>
+
 
       </div>
     </div>

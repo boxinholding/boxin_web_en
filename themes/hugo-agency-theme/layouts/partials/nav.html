@@ -17,7 +17,9 @@
         </a>
       {{ else }}
         <a class="navbar-brand page-scroll" href="{{ if .IsHome }}/#page-top{{ else }}{{ .Site.BaseURL }}{{ end }}">
-          {{ .Site.Params.navigation.brand }}
+          {{ with .Site.Params.navigation.brand }}
+            <img src="img/{{ . | markdownify }}" />
+          {{ end }}
         </a>
       {{ end }}
 

@@ -6,7 +6,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial;
 }
 
 .text-muted {
@@ -52,7 +52,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial;
     font-weight: 700;
 }
 
@@ -71,7 +71,7 @@ h6 {
 .btn-primary {
     border-color: #E41836;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial;
     font-weight: 700;
     color: #fff;
     background-color: #E41836;
@@ -122,7 +122,7 @@ fieldset[disabled] .btn-primary.active {
     border-color: #E41836;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -175,7 +175,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: Arial;
     color: #E41836;
 }
 
@@ -228,7 +228,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
@@ -296,57 +296,80 @@ header {
     -o-background-size: cover;
 }
 
+
 header .intro-text {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+    width: 80%;
+    text-align: left;
 }
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 22px;
-    font-style: italic;
-    line-height: 22px;
+    font-family: Arial;
+    font-size: 26px;
+    line-height: 26px;
 }
 
 header .intro-text .intro-heading {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    line-height: 32px;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 24px;
 }
 
 header .intro-text .intro-placeholder{
     height: 150px;
 }
 
-@media(min-width:768px) {
+@media(min-width:540px){
+    header .intro-text {
+        padding-top: 150px;
+        padding-bottom: 100px;
+        width: 60%;
+    }    
+}
+
+@media(min-width:880px) {
     header .intro-text {
         padding-top: 150px;
         padding-bottom: 200px;
         text-align: left;
         padding-left: 100px;
+        /* width: 525px; */
     }
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
-        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 40px;
-        font-style: italic;
-        line-height: 40px;
+        font-family: Arial;
+        font-size: 42px;
+        line-height: 42px;
     }
 
     header .intro-text .intro-heading {
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 20px;
-        line-height: 40px;
+        font-family: Arial;
+        font-size: 15px;
+        line-height: 30px;
+        color: #ddd;
+        font-weight: normal;
+        width: 520px;
     }
 }
 
+.margin-inside {
+    margin: -10px;
+}
+
 section {
-    padding: 75px 0;
+    padding: 0 0 100px 0;
+}
+section#product {
+    padding-top: 55px;
 }
 section.section-small {
     padding: 50px 0;
+}
+section#company {
+    padding-bottom: 140px;
 }
 section h2.section-heading {
     margin-top: 0;
@@ -357,26 +380,110 @@ section h2.section-heading {
 section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial;
     font-size: 16px;
-    font-style: italic;
     font-weight: 400;
+}
+/* contact diy */
+section .contact-title{
+    color: #f6f6f6;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 26px;
+    text-transform: unset;
+}
+
+section .contact-content {
+    display: grid;
+    grid-template-columns:auto;
+    grid-gap:10px;
+}
+
+section .contact-phone {
+    color: #ccc;
+    line-height: 40px;
+    padding: 10px;
+}
+
+section .contact-phone img {
+    margin-right:15px; 
+    width: 40px;
+    height: 40px;
+}
+
+section .contact-phone span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+section .contact-description {
+    display: grid;
+    grid-template-columns:auto;
+    grid-gap: 30px;
+    padding: 10px;
+}
+
+section .contact-item {
+    font-size: 14px;
+    color: #ccc;
+    display: grid;
+    grid-template-columns:auto auto;
+}
+
+section .contact-item .contact-key {
+    text-align: left;
+    margin-right: 15px;
+}
+
+section .contact-item .contact-value {
+    text-align: left;
 }
 
 @media(min-width:768px) {
     section {
-        padding: 100px 0;
+        padding: 0 0 120px 0;
+    }
+    section#product {
+        padding-top: 75px;
+    }
+    section#company {
+        padding-bottom: 160px;
     }
     section.section-small {
         padding: 75px 0;
+    }
+    section .contact-description {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 30px;
+        padding: 10px;
+    }
+    section .contact-title{
+        color: #f6f6f6;
+        margin-top: 0;
+        margin-bottom: 65px;
+        font-size: 30px;
+    }
+    section h3.section-subheading {
+        margin-bottom: 98px;
+    }
+
+    section .contact-content {
+        display: grid;
+        grid-template-columns:auto 15%;
+        grid-gap:30px;
     }
 }
 
 .service-heading {
     margin: 15px 0;
     text-transform: none;
+    color: #666;
 }
-
+.pbody-width {
+    padding: 0 8%;
+}
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
@@ -443,7 +550,7 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-caption p {
     margin: 0;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial;
     font-size: 16px;
     font-style: italic;
 }
@@ -681,16 +788,15 @@ section h3.section-subheading {
 
 .team-member img {
     margin: 0 auto;
-    border: 7px solid #fff;
 }
 
 .team-member p {
     margin-top: 0;
 }
-.team-member h3 {
+/* .team-member h3 {
     text-transform: none;
-    font-weight: 600;
-    color: #333;
+    margin: 15px 0;
+    text-transform: none;
 }
 
 .team-member h4 {
@@ -699,7 +805,7 @@ section h3.section-subheading {
     font-weight: 400;
     color: #777;
     margin-bottom: 0px;
-}
+} */
 
 .team-member h4 a {
     text-transform: none;
@@ -752,8 +858,7 @@ aside .heading {
 }
 
 section#contact {
-    background-color: #222;
-    background-image: url(../img/map-image.png);
+    background-color: #525157;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -786,28 +891,28 @@ section#contact .form-control:focus {
 
 section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-moz-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact::-moz-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-ms-input-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial;
     font-weight: 700;
     color: #bbb;
 }
@@ -828,7 +933,7 @@ footer {
 footer span.copyright {
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial;
     line-height: 40px;
 }
 
@@ -836,7 +941,7 @@ footer ul.quicklinks {
     margin-bottom: 0;
     text-transform: uppercase;
     text-transform: none;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Arial;
     line-height: 40px;
 }
 @media(min-width:768px){
@@ -854,11 +959,10 @@ ul.social-buttons li a {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-    font-size: 20px;
+    font-size: 40px;
     line-height: 40px;
     outline: 0;
-    color: #fff;
-    background-color: #222;
+    color: #827F8B;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
@@ -867,7 +971,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #E41836;
+    color: #E41836;
 }
 
 .btn:focus,

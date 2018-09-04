@@ -13,19 +13,19 @@
           <div class="col-md-4">
             {{ if .url }}
             <a href="{{ .url | absURL }}">
-              <span class="fa-stack fa-3x">
+              <span class="fa-stack fa-3x margin-inside">
                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
                 <i class="fa {{ .icon }} fa-stack-1x fa-inverse"></i>
               </span>
             </a>
             {{ else }}
-              <span class="fa-stack fa-3x">
+              <span class="fa-stack fa-3x margin-inside">
                 <i class="fa fa-circle fa-stack-2x text-primary"></i>
                 <i class="fa {{ .icon }} fa-stack-1x fa-inverse"></i>
               </span>
               {{ end }}
             <h4 class="service-heading">{{ if .url }}<a href="{{ .url | absURL }}">{{ .title | markdownify }}</a>{{ else }}{{ .title | markdownify }}{{ end }}</h4>
-            <p class="text-muted">{{ .description | markdownify }}</p>
+            <p class="text-muted text-center pbody-width">{{ .description | markdownify }}</p>
           </div>
         {{ end }}
       </div>

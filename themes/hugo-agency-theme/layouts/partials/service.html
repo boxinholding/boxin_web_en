@@ -12,8 +12,8 @@
         <div class="col-sm-4 col">
           <div class="team-member">
             {{ $url := printf "img/service/%s" .img }}
-            <img src="{{ $url | absURL }}" class="img-responsive img-circle" alt="{{ .name }}">
-            <h3 style="color:#666">{{ .name | markdownify }}</h3>
+            <img src="{{ $url | absURL }}" class="img-responsive" alt="{{ .name }}">
+            <h4 class="service-heading">{{ .name | markdownify }}</h4>
 
             {{ with .position }}
             <h4>{{ . | markdownify }}</h4>
@@ -36,7 +36,7 @@
 
             <ul class="list-inline social-buttons">
               {{ range .social }}
-                <li><a href="{{ index . 1 }}"><i class="fa {{ index . 0 }}"></i></a></li>
+                <li><a href="{{ index . 1 }}" target="_blank"><i class="fa {{ index . 0 }}"></i></a></li>
               {{ end }}
             </ul>
 

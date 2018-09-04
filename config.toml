@@ -1,7 +1,7 @@
 # Site settings
-baseurl = "http://10.0.0.88:1212"
+baseurl = "http://10.0.0.88"
 languageCode = "en-us"
-title = "Toppers"
+title = "TPPPERS"
 theme = "hugo-agency-theme"
 
 # Enter your tracking code to enable Google Analytics
@@ -24,7 +24,7 @@ googleAnalytics = ""
 
   # Navigation
   [params.navigation]
-    brand = "TOPPERS"
+    brand = "logo.png"
     product = "Product"
     service = "Service"
     company = "Company"
@@ -33,9 +33,9 @@ googleAnalytics = ""
   # Hero section
   [params.hero]
     enable = true
-    notext = true
-    title = ""
-    description = ""
+    notext = false
+    title = "Lose Yourself in Music"
+    description = "Intelligent digital–control One-key Noise Cancellation Free your hands with digital-control box integrated answer-call key LED lights dynamically show your battery level"
 
   [params.carousel]
     enable = false
@@ -44,25 +44,25 @@ googleAnalytics = ""
   [params.product]
     enable = true
     title = "product"
-    subtitle = "For more company, please pay attention to Toppers."
+    subtitle = "A nice day starts with TOPPERS"
 
   [[params.product.row]]
 
     [[params.product.row.list]]
       icon = "iconfont tp-earphones"
-      title = "Headset"
+      title = "Noise Cancelling Earphones"
       description = ""
       modalID = 1
 
     [[params.product.row.list]]
       icon = "iconfont tp-watch"
-      title = "Watch"
+      title = "Children's Smart Watch"
       description = ""
       modalID = 2
     
     [[params.product.row.list]]
       icon = "iconfont tp-more"
-      title = "more"
+      title = "More"
       description = ""
       modalID = 3
 
@@ -71,74 +71,80 @@ googleAnalytics = ""
     enable = true
     center = true
     title = "Service"
-    subtitle = "Toppers gives you the best user experience."
+    subtitle = "TOPPERS provide you with the best UE."
     [[params.service.members]]
       img = "1.png"
-      name = "Smart Sound Box"
+      name = "Smart Speaker"
       social = [
-        ["fa-android", "#"],
-        ["fa-apple", "#"],
+        ["fa-android", "http://static.toppers.com.cn/app/Toppers%20S1-v1.0.apk"],
+        ["fa-apple", "https://itunes.apple.com/cn/app/toppers-s1/id1348745313?mt=8"],
       ]
 
     [[params.service.members]]
       img = "2.png"
-      name = "Translation Headphones"
+      name = "Earphone Translator"
       social = [
-        ["fa-android", "#"],
-        ["fa-apple", "#"],
+        ["fa-android", "http://static.toppers.com.cn/app/TOPPERS%20E1-v2.1.2.apk"],
+        ["fa-apple", "https://itunes.apple.com/cn/app/%E5%B0%8F%E6%B7%98%E6%99%BA%E8%83%BD%E8%80%B3%E6%9C%BA/id1335517514?l=en&mt=8"],
       ]
 
     [[params.service.members]]
       img = "3.png"
-      name = "Children Watch"
+      name = "Children's Smart Watch"
       social = [
-        ["fa-android", "#"],
-        ["fa-apple", "#"],
+        ["fa-android", "http://static.toppers.com.cn/app/Toppers%20W1-v1.0.apk"],
+        ["fa-apple", "https://itunes.apple.com/cn/app/小淘儿童手表/id1347040276?l=en&mt=8"],
       ]
 
  # company section
   [params.company]
     enable = true
     title = "Company"
-    subtitle = "For more company, please pay attention to Toppers."
+    subtitle = "For other services, please visit TOPPERS"
   [[params.company.row]]
 
     [[params.company.row.list]]
       icon = "iconfont tp-about"
-      title = "About us"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-      url = "#"
+      title = "About Us"
+      description = "Boxin Investing & Holdings Co. Ltd is a high-tech enterprise who is dedicated to producing top quality, intelligent products and solutions."
+    
 
     [[params.company.row.list]]
-      icon = "iconfont tp-speakers"
-      title = "产品理念"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-      url = "#"
+      icon = "iconfont tp-technology"
+      title = "Product Concept"
+      description = "Based on AI (Artificial Intelligence) and Big Data, it provides smarter and more personalized products; Based on IoT and Pervasive Networking Technology, it makes products more interconnected and sharable; With mobile network, it makes products more portable and practical."
+      
 
     [[params.company.row.list]]
       icon = "iconfont tp-development"
-      title = "研发中心"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-      url = "#"
+      title = "R&D Centre"
+      description = "Boxin Investing & Holdings Co. Ltd planned to set up branches in Beijing, Suzhou, Shenzhen, America and Singapore to make full use of the local high-quality resources and introduce leading technologies to bring benefit to our users."
+    
 
   # Contact section
   [params.contact]
     enable = true
-    title = "Contact us"
-    subtitle  = "Lorem ipsum dolor sit amet consectetur."
+    company = "Boxin Smartcom (Suzhou) Sci&Tech Co.Ltd"
+    address = [ 
+      ["Beijing Address:","Floor 12 Gendale Center,No 91 Jianguo Road,Chaoyang District,Beijing"],
+      ["Suzhou Address:","Room 706,Floor 7,No 288 Jinke Street,Suzhou City"],
+    ]
+    phone = "Phone: &nbsp; 010-58702900"
+    email = "Email: &nbsp; kefu@boxinholding.com"
+    call = [["call.png","400-000-1656"]]
 
   # Footer section
   [params.footer]
     enable = true
-    copyright = "Published under the Apache License 2.0."
+    copyright = "Copyright © 2017-2018 Boxin Smartcom (Suzhou) Sci&Tech Co.Ltd All rights reserved"
 
     [[params.footer.social]]
       icon = "fa-weixin"
-      link = "#"
+      link = "javascript:void(0);"
       title = "wechat"
 
     [[params.footer.social]]
       icon = "fa-weibo"
-      link = "#"
+      link = "javascript:void(0);"
       title = "sina weibo"
 
