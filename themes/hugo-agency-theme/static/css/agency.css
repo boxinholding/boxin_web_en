@@ -780,6 +780,11 @@ section .contact-item .contact-value {
   align-items: stretch;
 }
 
+/* section service on safari brower has a bug */
+.flexbox:after, .flexbox:before {
+    display: none;
+}
+
 .flexbox-center {
   justify-content: center;
 }
