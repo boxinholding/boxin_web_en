@@ -428,7 +428,7 @@ section .contact-item {
     font-size: 14px;
     color: #ccc;
     display: grid;
-    grid-template-columns:auto auto;
+    grid-template-columns: max-content auto;
 }
 
 section .contact-item .contact-key {
@@ -453,6 +453,13 @@ section .contact-item .contact-value {
     section.section-small {
         padding: 75px 0;
     }
+   
+    section h3.section-subheading {
+        margin-bottom: 98px;
+    }
+}
+
+@media(min-width:991px){
     section .contact-description {
         display: grid;
         grid-template-columns: auto auto;
@@ -465,10 +472,6 @@ section .contact-item .contact-value {
         margin-bottom: 65px;
         font-size: 30px;
     }
-    section h3.section-subheading {
-        margin-bottom: 98px;
-    }
-
     section .contact-content {
         display: grid;
         grid-template-columns:auto 15%;
