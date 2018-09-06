@@ -363,13 +363,15 @@ section {
     padding: 0 0 100px 0;
 }
 section#product {
-    padding-top: 55px;
+    padding-top: 100px;
+    padding-bottom: 85px;
 }
 section.section-small {
-    padding: 50px 0;
+    padding: 50px 0 80px 0;
 }
 section#company {
-    padding-bottom: 140px;
+    padding-bottom: 90px;
+    margin-top:-50px;
 }
 section h2.section-heading {
     margin-top: 0;
@@ -390,19 +392,19 @@ section .contact-title{
     margin-top: 0;
     margin-bottom: 40px;
     font-size: 26px;
+    font-weight: unset;
     text-transform: unset;
 }
 
 section .contact-content {
     display: grid;
     grid-template-columns:auto;
-    grid-gap:10px;
+    grid-gap:20px;
 }
 
 section .contact-phone {
     color: #ccc;
     line-height: 40px;
-    padding: 10px;
 }
 
 section .contact-phone img {
@@ -413,15 +415,13 @@ section .contact-phone img {
 
 section .contact-phone span {
     display: inline-block;
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 section .contact-description {
     display: grid;
     grid-template-columns:auto;
-    grid-gap: 30px;
-    padding: 10px;
+    grid-gap: 20px;
 }
 
 section .contact-item {
@@ -445,13 +445,14 @@ section .contact-item .contact-value {
         padding: 0 0 120px 0;
     }
     section#product {
-        padding-top: 75px;
+        padding-top: 120px;
+        padding-bottom: 105px;
     }
     section#company {
-        padding-bottom: 160px;
+        padding-bottom: 110px;
     }
     section.section-small {
-        padding: 75px 0;
+        padding: 70px 0 100px 0;
     }
    
     section h3.section-subheading {
@@ -463,19 +464,15 @@ section .contact-item .contact-value {
     section .contact-description {
         display: grid;
         grid-template-columns: auto auto;
-        grid-gap: 30px;
-        padding: 10px;
-    }
-    section .contact-title{
-        color: #f6f6f6;
-        margin-top: 0;
-        margin-bottom: 65px;
-        font-size: 30px;
+        grid-gap:40px;
     }
     section .contact-content {
         display: grid;
-        grid-template-columns:auto 15%;
-        grid-gap:30px;
+        grid-template-columns:auto 20%;
+        grid-gap:40px;
+    }
+    section .contact-phone {
+        padding-left: 10px;
     }
 }
 

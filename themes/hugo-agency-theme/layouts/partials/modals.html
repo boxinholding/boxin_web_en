@@ -16,7 +16,7 @@
               <p class="item-intro text-muted">{{ .subtitle | markdownify }}</p>
               {{ $url := printf "img/product/%s" .img }}
               <img class="img-responsive img-centered" src="{{ $url | absURL }}" alt="">
-              <p class="text-left">{{ .description | markdownify }}</p>
+              <p class="text-left" style="font-size:16px">{{ .description | markdownify }}</p>
             </div>
           </div>
         </div>
