@@ -72,6 +72,12 @@
             <a class="page-scroll" href="{{ .Site.BaseURL }}#contact">{{ with .Site.Params.navigation.contact }}{{ . }}{{ end }}</a>
           </li>
         {{ end }}
+        
+        {{ if .Site.Params.chineseurl }}
+        <li>
+          <a class="page-scroll" href="{{ .Site.Params.chineseurl }}">中文</a>
+        </li>
+        {{ end }}
 
         {{ range .Site.Menus.postpend }}
           <li>

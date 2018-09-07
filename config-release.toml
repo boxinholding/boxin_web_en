@@ -12,6 +12,7 @@ googleAnalytics = ""
   custom_css = []
   custom_js  = []
   favicon    = "favicon.ico"
+  chineseurl = "https://www.toppers.com.cn"
 
   # Possibility to disable external/additional fonts
   # Exception: Fontawesome
