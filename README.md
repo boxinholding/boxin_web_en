@@ -15,4 +15,8 @@ hugo version
 `hugo server -D`
 
 open link with browser
->localhost:1313
+>[localhost:1313](localhost:1313)
+
+## How to release
+
+`hugo --config config-release.toml`

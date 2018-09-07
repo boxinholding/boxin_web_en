@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://localhost"
+baseurl = "https://www.toppers.com.cn/en"
 languageCode = "en-us"
 title = "TPPPERS"
 theme = "hugo-agency-theme"
